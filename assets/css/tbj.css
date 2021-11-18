@@ -516,7 +516,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #82909c;
   }
   .about .image {
-    background: url("../img/me.jpg") center center no-repeat;
+    /* background: url("../img/me.jpg") center center no-repeat; */
+    background: url("../img/f622d2bb-574d-43cd-ade8-23ef4ce3d16c.jpg") center center no-repeat;
     background-size: cover;
     min-height: 500px;
   }

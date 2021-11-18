@@ -7,11 +7,17 @@
         <title> Jihad Skaf </title>
 
         <meta content="Portfolio, Resume, CV" name="description">
-        <meta content="" name="keywords">
+        <meta name="description" content="Passionate about Marketing, with 10+ years of experience in groceries stores and cosmetics environments." />
+        <meta name="keywords" content="Jihad, Jihad Skaf, Skyfall, Marketing Manager, Marketing in Gambia, Groceries"/>
 
         <!-- Favicons -->
-        <link href="assets/img/favicon.png" rel="icon">
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="assets/img/favicon/tbj-favicon-ico.ico" rel="icon">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/tbj-favicon-png16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/tbj-favicon-png32.png" />
+        <link rel="icon" type="image/png" sizes="150X150" href="assets/img/favicon/tbj-favicon-png150.png" />
+        <link rel="icon" type="image/png" sizes="180X180" href="assets/img/favicon/tbj-favicon-png180.png" />
+        <link rel="icon" type="image/png" sizes="192X192" href="assets/img/favicon/tbj-favicon-png192.png" />
+        <link rel="icon" type="image/png" sizes="512X512" href="assets/img/favicon/tbj-favicon-png512.png" />  
 
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
@@ -219,7 +225,8 @@
                         </div>
             
                         <div class="col-lg-6">
-                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <form id="contactform" action="https://formsubmit.io/send/backendbackbonner@outlook.com" method="POST">
+                                <!-- <input name="_redirect" type="hidden" id="name" value="https://backend-backboners.github.io/portfolio/thanks.html"> -->
                                 <div class="row">
                                     <div class="col-md-6 form-group">
                                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -228,12 +235,28 @@
                                         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                                     </div>
                                 </div>
+
                                 <div class="form-group mt-3">
                                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                                 </div>
+                                
                                 <div class="form-group mt-3">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                                    <!-- <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea> -->
+                                    <textarea class="form-control" name="comment" id="comment" rows="6" placeholder="Message" required></textarea>
                                 </div>
+
+                                <input name="_formsubmit_id" type="text" style="display:none">
+
+                                <div class="form-group">
+                                    <span class="ms-2">Accept our 
+                                        <a href="terms.html">terms of service</a> and <a href="privacy.html">privacy policy</a>
+                                    </span>
+
+                                    <input type="checkbox" name="privacy" value="accept" class="float-left h-auto mt-1" data-rule="checked" data-msg="Please, accept our terms of service and privacy acy policy">
+
+                                    <div class="validate"></div>
+                                </div>
+                                
                                 <div class="my-3">
                                     <div class="loading">Loading</div>
                                     <div class="error-message"></div>
